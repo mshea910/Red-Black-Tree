@@ -5,7 +5,6 @@
 #ifndef RED_BLACK_TREE_NODE_H
 #define RED_BLACK_TREE_NODE_H
 
-
 class Node {
 public:
     explicit Node(int data);
