@@ -1,0 +1,29 @@
+Red Black Tree Implementation
+
+1. Create Red Black Tree
+    - Create data structure class
+    - Create Balance method
+        -- Each Node is either Red or Black
+        -- The Root Node is Black
+        -- All NIL Leaves are Black
+        -- Red Node must not have Red children
+        -- All Paths from a Node to the Leaves below must contain the same number of Black Nodes
+    - Create Insertion method
+        -- Insert Node
+        -- Balance
+    - Create Find method
+    - Override < Comparison Operator for checking
+    - Override = Comparison Operator for checking
+
+2. Adjust Red Black Tree to Use as Template
+
+3. Create Testing Class for Timings
+    - Use Chrono Header: http://cplusplus.com/reference/chrono
+
+4. Create "Black Height" Function
+    - Recursive function 
+    - Checks if tree has same number of black nodes along the simple path
+
+5. Simplify with Nil Nodes
+
+6. (Extra Credit) Implement Deletion

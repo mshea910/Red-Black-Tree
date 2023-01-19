@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Editor Stuff
+/cmake-build-debug
+CMakeLists.txt
+Dev Checklist
