@@ -32,6 +32,7 @@
 *.app
 
 # Editor Stuff
+*.idea
 /cmake-build-debug
 CMakeLists.txt
-Dev Checklist
+DevChecklist.txt
