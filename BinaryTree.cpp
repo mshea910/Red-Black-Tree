@@ -8,6 +8,39 @@ Node BinaryTree::getRoot() {
     return this->root;
 }
 
+Node* BinaryTree::createNode(int data, bool color = true) {
+    Node* node = new Node(data);
+    node->left = NULL;
+    node->right = NULL;
+    if(!color){
+        node->color = false;
+    } else {
+        node->color = true;
+    }
+
+    return node;
+}
+
+Node* BinaryTree::rightRotate(Node * node) {
+    Node* left = node->left;
+    Node* right = node->right;
+
+    left->right = node;
+    node->left = right;
+
+    return left;
+}
+
+Node* BinaryTree::leftRotate(Node * node) {
+    Node* left = node->left;
+    Node* right = node->right;
+
+    right->left = node;
+    node->right = left;
+
+    return right;
+}
+
 std::string BinaryTree::toString() {
     std::string returnString;
     Node rtNode = getRoot();

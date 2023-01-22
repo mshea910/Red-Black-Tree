@@ -15,6 +15,9 @@ public:
     std::string toString();
 
 protected:
+    Node* createNode(int,bool);
+    Node* rightRotate(Node*);
+    Node* leftRotate(Node*);
     Node root;
 };
 

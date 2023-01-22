@@ -9,6 +9,11 @@
 
 class RedBlackTree : BinaryTree {
 public:
+    Node* insertNode(Node*,int);
+    void swapColors(Node*,Node*);
+    int isRed(Node*);
+
+
 private:
 
 };
