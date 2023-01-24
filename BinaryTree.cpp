@@ -4,6 +4,10 @@
 
 #include "BinaryTree.h"
 
+BinaryTree::BinaryTree(Node root) : root(root) {
+    this->root = *createNode(NULL,true);
+}
+
 void BinaryTree::inOrderTraversal(Node* visitor) {
     if(visitor == NULL) {
         return;
