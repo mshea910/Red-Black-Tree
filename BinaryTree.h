@@ -11,6 +11,7 @@
 
 class BinaryTree {
 public:
+    static void inOrderTraversal(Node*);
     Node getRoot();
     std::string toString();
 

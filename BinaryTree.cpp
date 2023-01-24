@@ -4,6 +4,16 @@
 
 #include "BinaryTree.h"
 
+void BinaryTree::inOrderTraversal(Node* visitor) {
+    if(visitor == NULL) {
+        return;
+    }
+
+    inOrderTraversal(visitor->left);
+    std::cout << visitor->data << "<--";
+    inOrderTraversal(visitor->right);
+}
+
 Node BinaryTree::getRoot() {
     return this->root;
 }
